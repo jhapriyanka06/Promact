@@ -1,0 +1,90 @@
+*{	margin:0;
+	padding-left: 0;
+	text-decoration: none;
+}
+body{
+	background-color: #D8DA3D;
+}
+hr{
+	border-top:1.5px dotted;
+	color: #80007E;
+}
+
+/*<-------------------headings--------------------->*/
+.right-side-div h1{
+	color: #80007E;
+	font-family: "arial";
+}
+/*<----------------------------paragraphs------------------->*/
+.purple-font{
+	color: #80007E;
+}
+.bottom-text p{
+	color: #80007E;
+	font-family: "algerian";
+}
+/*<-----------------------lorem ipsum para---------------->*/
+ .first-lorem {
+	border: 1.5px solid black;
+	border-style: dashed;
+	width: 75%;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.second-lorem {
+	border:1.5px #FF7F00;
+	border-style: dashed;
+	width: 75%;
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.third-lorem {
+	border:1.5px #0000FF;
+	border-style: dotted;
+	width: 75%;
+	text-align: center;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+/*<--------------------------left side divs----------------------------->*/
+.left-side-div{
+	float: left;
+	width: 300px;
+	margin-top: 35px;
+	margin-left: 5px;
+
+}
+.w3sorange{
+	border: 0px solid white;
+	width: 80%;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	border-right: 15px solid #FF7F00;
+	color: purple;
+	font-family: "arial";
+}
+ .w3sblue{
+	border: 0px solid white;
+	width: 80%;
+	border-right: 15px solid #0000FF;
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	color: purple;
+	font-family: "arial";
+}
+/*<-------------------right side div------------------------------>*/
+.right-side-div{
+	float: right;
+	width: 1200px;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
