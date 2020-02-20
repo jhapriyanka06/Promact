@@ -169,7 +169,7 @@ hr{
 	padding-bottom: 20px;
 	border:2px solid black;
 }
-.heading h3{
+.heading {
 	padding-top: 20px;
 	margin-right: 200px;
 	margin-left: 200px;
@@ -180,32 +180,30 @@ hr{
 	width: 100%;
 	margin-top: 10px;
 }
+
 .section-2{
-	margin-top: 50px;
+	margin-top: 30px;
 	padding-bottom: 20px;
 	margin-right: 200px;
 	margin-left: 200px;
 	border:2px solid black;
 	overflow: hidden;
 	height: 150px;
-	width: 800px;
+	width: 850px;
 }
 .section-2 img{
-	object-fit: cover;
-	object-position: 0 0px 100px 0;
+	position: relative;
+	bottom:  300px;
 	margin-top: 10px;
 	padding-top: 10px;
-	width: 800px;
-	height: 150px;
+	width: 850px;
 }
+
 .section-3{
 	padding-top: 20px;
 	margin-right: 400px;
 	margin-left: 400px;
 	padding-bottom: 10px;
-}
-.heading{
-	margin-right: 200px;
 }
 .section-3 img{
 	
