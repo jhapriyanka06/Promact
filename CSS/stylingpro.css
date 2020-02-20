@@ -8,6 +8,9 @@ body{
 .assgn2{
 	background-color: white;
 }
+.assgn3{
+	background-color: white;
+}
 hr{
 	border-top:1.5px dotted;
 	color: #80007E;
@@ -147,7 +150,7 @@ hr{
 	float: right;
 	background-color: lightgrey;
 	border-right: 1.5px solid black;
-	border-bottom:  1.5px solid black;
+	border-bottom: 1.5px solid black;
 	width: 310px;
 	height: 340px;
 }
@@ -156,6 +159,58 @@ hr{
 	margin-top: 5px;
 	width: 300px;
 	height:330px;
+}
+.section-1{
+	margin-right: 200px;
+	margin-left: 200px;
+	max-height: 200px;
+	width: 850px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	border:2px solid black;
+}
+.heading h3{
+	padding-top: 20px;
+	margin-right: 200px;
+	margin-left: 200px;
+}
+.section-1 img {
+	display: block;
+	max-height: auto !important;
+	width: 100%;
+	margin-top: 10px;
+}
+.section-2{
+	margin-top: 50px;
+	padding-bottom: 20px;
+	margin-right: 200px;
+	margin-left: 200px;
+	border:2px solid black;
+	overflow: hidden;
+	height: 150px;
+	width: 800px;
+}
+.section-2 img{
+	object-fit: cover;
+	object-position: 0 0px 100px 0;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 800px;
+	height: 150px;
+}
+.section-3{
+	padding-top: 20px;
+	margin-right: 400px;
+	margin-left: 400px;
+	padding-bottom: 10px;
+}
+.heading{
+	margin-right: 200px;
+}
+.section-3 img{
+	
+	width:500px;
+	height: 300px;
 }
 
 
