@@ -14,6 +14,10 @@
 				    padding-bottom: 10px;
 				    padding-top: 10px;
 			}
+			input[type='checkbox']
+				{
+				   margin-right:30px;
+				}
 		</style>
 
 		<!--<script type="text/javascript" src="scripts/jsassignment.js"></script>-->
@@ -57,15 +61,13 @@
 			   			 <option> -- select an option --</option>
 			    	</select><br><br>
 
-			        <label>Coding Languages:</label><br>
-			        <input type="checkbox" id="1">C/C++<br>
-					<input type="checkbox" checked id="2">Java<br>
-					<input type="checkbox" checked id="3">C#<br>
-					<input type="checkbox" id="4">PHP<br>
-					<input type="checkbox" id="5">Python<br><br>
+			    	<p style="color: blue">click the button below to select a Programming Language</p><br> 
+			    	<button onclick="geeks()">Click me!</button><br>
+       				 <div id="myDiv"></div><br>
 
-			        <button type="submit" value="Submit" onclick="data()">Submit</button>
-	    </form>
+			       <button type="submit" value="Submit" onclick="data()">Submit</button>
+
+		</form>
 	    
 	    <script src="scripts/jsassgn.js"></script>
 	 </div>

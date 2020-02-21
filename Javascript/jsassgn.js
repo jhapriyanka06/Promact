@@ -1,5 +1,5 @@
 var select = document.getElementById("qual");
-var qualification = ["1oth", "12th", "UG", "PG"];
+var qualification = ["10th", "12th", "UG", "PG"];
 for (var i = 0; i < qualification.length; i++) {
     var qualify = document.createElement("option");
     qualify.textContent = qualification[i];
@@ -15,6 +15,37 @@ for (var i = 0; i < experience.length; i++) {
     ex.value = experience[i];
     select.appendChild(ex);
 }
+
+
+function geeks()
+{
+    event.preventDefault();
+    var mydiv=document.getElementById("myDiv");
+    var array=["C/C++","JAVA","C#","PHP","Python"];
+
+    var p,br;
+
+    for (var i = 0; i < array.length; i++) {
+        var checkbox = document.createElement("input");
+
+        checkbox.type = "checkbox"; 
+        checkbox.value=(array[i]);
+        checkbox.id = "check" + i; 
+
+         p =document.createElement("span");
+         p.innerHTML = array[i] + ": ";
+
+        if (checkbox.value === "JAVA" || checkbox.value === "C#") {
+            checkbox.checked=true;
+        }
+
+        br =document.createElement("br");
+
+        mydiv.appendChild(p);
+        mydiv.appendChild(checkbox); 
+        mydiv.appendChild(br);
+    }
+} 
 
 function data() {
   event.preventDefault();
@@ -47,3 +78,5 @@ function data() {
         }
   console.log(Employeedata);  
 }
+
+
