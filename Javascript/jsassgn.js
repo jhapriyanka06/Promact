@@ -21,21 +21,56 @@ function geeks()
 {
     event.preventDefault();
     var mydiv=document.getElementById("myDiv");
-    var array=["C/C++","JAVA","C#","PHP","Python"];
+    
+    let language=[
+    {
+        name:"C/C++",
+        isEnabled: function(){
+            return false;
+        }
+    },
+    {
+        name:"JAVA",
+        isEnabled: function(){
+            return true;
+        }
+    },
+    {
+        name:"C#",
+        isEnabled: function(){
+            return true;
+        }
+    },
+    {
+        name:"PHP",
+        isEnabled: function(){
+            return false;
+        }
+    },
+    {
+        name:"Python",
+        isEnabled: function(){
+            return false;
+        }
+    }
+    ];
 
     var p,br;
 
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < language.length; i++) {
         var checkbox = document.createElement("input");
 
         checkbox.type = "checkbox"; 
-        checkbox.value=(array[i]);
+        checkbox.value=(language[i].name);
         checkbox.id = "check" + i; 
 
          p =document.createElement("span");
-         p.innerHTML = array[i] + ": ";
+         p.innerHTML = language[i].name + ": ";
 
-        if (checkbox.value === "JAVA" || checkbox.value === "C#") {
+        /*if (checkbox.value === "JAVA" || checkbox.value === "C#") {
+            checkbox.checked=true;
+        }*/
+        if (language[i].isEnabled()) {
             checkbox.checked=true;
         }
 
