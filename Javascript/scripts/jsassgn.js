@@ -21,7 +21,7 @@ function geeks()
 {
     event.preventDefault();
     var mydiv=document.getElementById("myDiv");
-    
+    document.getElementById("button").disabled=true;
     let language=[
     {
         name:"C/C++",
@@ -79,22 +79,6 @@ function geeks()
         mydiv.appendChild(br);
     }
 } 
-function lang() {
-    var list = [];
-    if (document.getElementById('0').checked)
-        list.push(document.getElementById('0').value);
-    if (document.getElementById('1').checked)
-        list.push(document.getElementById('1').value);
-    if (document.getElementById('2').checked)
-        list.push(document.getElementById('2').value);
-    if (document.getElementById('3').checked)
-        list.push(document.getElementById('3').value);
-    if (document.getElementById('4').checked)
-        list.push(document.getElementById('4').value);
-    return list;
-}
-
-
 
 function data() {
   event.preventDefault();
@@ -111,15 +95,32 @@ function data() {
         Programming_language: lang(),
         
     };
-    
+
         if (document.getElementById('male').checked) {
             Employeedata.Gender= "male";
         }
         if (document.getElementById('female').checked) {
             Employeedata.Gender= "female";
         }
+    
+        
+        function lang() {
+            var list = [];
+            if (document.getElementById('0').checked)
+                list.push(document.getElementById('0').value);
+            if (document.getElementById('1').checked)
+                list.push(document.getElementById('1').value);
+            if (document.getElementById('2').checked)
+                list.push(document.getElementById('2').value);
+            if (document.getElementById('3').checked)
+                list.push(document.getElementById('3').value);
+            if (document.getElementById('4').checked)
+                list.push(document.getElementById('4').value);
+            return list;
+        }
         
        
-  console.log(Employeedata);  
+  console.log(Employeedata);
+
 }
 
