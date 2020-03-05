@@ -62,14 +62,12 @@ function geeks()
 
         checkbox.type = "checkbox"; 
         checkbox.value=(language[i].name);
-        checkbox.id = "check" + i; 
+        checkbox.id = i; 
 
          p =document.createElement("span");
          p.innerHTML = language[i].name + ": ";
 
-        /*if (checkbox.value === "JAVA" || checkbox.value === "C#") {
-            checkbox.checked=true;
-        }*/
+        
         if (language[i].isEnabled()) {
             checkbox.checked=true;
         }
@@ -81,6 +79,22 @@ function geeks()
         mydiv.appendChild(br);
     }
 } 
+function lang() {
+    var list = [];
+    if (document.getElementById('0').checked)
+        list.push(document.getElementById('0').value);
+    if (document.getElementById('1').checked)
+        list.push(document.getElementById('1').value);
+    if (document.getElementById('2').checked)
+        list.push(document.getElementById('2').value);
+    if (document.getElementById('3').checked)
+        list.push(document.getElementById('3').value);
+    if (document.getElementById('4').checked)
+        list.push(document.getElementById('4').value);
+    return list;
+}
+
+
 
 function data() {
   event.preventDefault();
@@ -91,10 +105,10 @@ function data() {
         Address: document.getElementById("add").value,
         User_Name: document.getElementById("u_name").value,
         Password: document.getElementById("pwd").value,
-        Gender: "None",
+        Gender: "",
         Qualification: document.getElementById("qual").value,
         Experience: document.getElementById("exp").value,
-        Programming_language: "C# and Java",
+        Programming_language: lang(),
         
     };
     
@@ -104,14 +118,8 @@ function data() {
         if (document.getElementById('female').checked) {
             Employeedata.Gender= "female";
         }
-        if (document.getElementById('1').checked) {
-            Employeedata.Programming_language= "C/C++ " + Employeedata.Programming_language;
-        }if (document.getElementById('2').checked) {
-            Employeedata.Programming_language= "PHP " + Employeedata.Programming_language;
-        }if (document.getElementById('3').checked) {
-            Employeedata.Programming_language= "Python " + Employeedata.Programming_language;
-        }
+        
+       
   console.log(Employeedata);  
 }
-
 
