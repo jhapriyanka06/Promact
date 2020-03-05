@@ -24,7 +24,7 @@
 	</head>
 	<body>
 		<div class="content-box-lg">
-			<form id="form" action="index.html" method="POST">
+			<form id="form" action="" method="POST" >
 		      	 <label>First Name:</label><br>
 					<input type="text" name="firstname" id="f_name"><br><br>
 					
@@ -45,7 +45,7 @@
 					<input type="text" name="username" id="u_name"><br><br>
 
 					<label>Password:</label><br>
-					<input type="Password" name="pwd" id=pwd><br><br>
+					<input type="Password" name="pwd" id="pwd"><br><br>
 
 					<label>Gender:</label><br>
 					<input type="radio" name="gender" value="male" id="male">Male</input><br>
@@ -61,11 +61,12 @@
 			   			 <option> -- select an option --</option>
 			    	</select><br><br>
 
-			    	<p style="color: blue">click the button below to select a Programming Language</p><br> 
-			    	<button onclick="geeks()">Click me!</button><br>
+			    	<p style="color: blue">click the button below to select your preferred Programming Language</p><br> 
+			    	<button id="button" onclick="geeks()">Click me!</button><br>
        				 <div id="myDiv"></div><br>
 
-			       <button type="submit" value="Submit" onclick="data()">Submit</button>
+       				 
+       				 <input type="submit" id="submit" onclick="data()" value="submit">
 
 		</form>
 	    
