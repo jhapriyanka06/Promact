@@ -1,0 +1,62 @@
+
+<div class="container">
+  <h2>Employee Registeration Form</h2>
+  <form action="" method="POST" #form="ngForm" (ngSubmit)="onSubmit(form)">
+
+    <label for="firstname">First Name:</label><br>
+    <input type="text" name="firstname" id="firstname" placeholder="Fname" ngModel required><br><br>
+
+    <label for="lastname">Last Name: </label><br>
+    <input type="text"  id="lastname" placeholder="Lname" name="lastname" ngModel required><br><br>
+
+    <label for="mail">Email: </label><br>
+    <input type="Email" id="mail" placeholder="Email" name="mail" ngModel required><br><br>
+
+
+    <label for="cntct">Contact number: </label><br>
+    <input type="number" id="cntct" placeholder="Contact" name="contact" ngModel required><br><br>
+
+    <label for="add">Address: </label><br>
+    <textarea name="address" id="add" placeholder="Address" ngModel required></textarea><br><br>
+
+    <label for="uname">Username:</label><br>
+    <input type="text" id="uname" placeholder="UserName" name="username" ngModel required><br><br>
+
+    <label for="pwd">Password:</label><br>
+    <input type="Password" id="pwd" placeholder="passwrd" name="pwd" ngModel required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="malegender" name="gender" value="male" ngModel required>
+    <label for="malegender">Male</label><br>
+    <input type="radio" id="femalegender" name="gender" value="female" ngModel required>
+    <label for="femalegender">Female</label><br><br>
+
+    <label id="qual">	Qualification: </label><br>
+    <select id="qual" name="qualfication" ngModel required>
+      <option hidden disabled selected value>--Select--</option>
+      <option *ngFor="let type of Qualifiacation | async">
+        {{type}}
+      </option>
+    </select><br><br>
+
+    <label id="exp">	Experience: </label><br>
+    <select id="exp" name="experience" ngModel required>
+      <option hidden disabled selected value>--select--</option>
+      <option *ngFor="let type of Experiences | async">
+        {{type}}
+      </option>
+    </select><br><br>
+
+
+    <label for="Codes" >Coding Language: </label><br>
+    <div *ngFor="let coding of Codes | async">
+      <label>
+    <input type="checkbox" name="Codes" ngModel>
+      {{coding}}
+  </label>
+
+  </div>
+    <button class="btn btn-primary" type="submit" name="submit">Submit</button>
+  </form>
+</div>
+
